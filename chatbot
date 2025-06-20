@@ -1,0 +1,23 @@
+def chatbot():
+    print("Customer Service Chatbot 🤖 (type 'exit' to quit)")
+    while True:
+        user_input = input("You: ").lower()
+
+        if "exit" in user_input:
+            print("Bot: Thank you for chatting! Goodbye.")
+            break
+        elif "store hours" in user_input or "open" in user_input:
+            print("Bot: Our store is open from 9 AM to 9 PM, Monday through Saturday.")
+        elif "return" in user_input:
+            print("Bot: You can return products within 30 days. Please visit our return portal or contact support.")
+        elif "order status" in user_input or "where is my order" in user_input:
+            print("Bot: Please provide your order number so we can look it up.")
+        elif "discount" in user_input or "promo" in user_input:
+            print("Bot: Yes! We offer discounts during seasonal sales. Check our website for current offers.")
+        elif "shipping" in user_input:
+            print("Bot: Standard shipping takes 3-5 business days. Express options are available at checkout.")
+        else:
+            print("Bot: I'm sorry, I didn't understand that. Please try asking something else.")
+
+chatbot()
+
